@@ -2,13 +2,14 @@
 region = us-west-2
 
 [CLUSTER]
-HOST=testcluster.cuyq32cifj16.us-west-2.redshift.amazonaws.com
-DB_NAME=testdwh
-DB_USER=testuser
-DB_PASSWORD=testpassword
+HOST=dwhcluster.cuyq32cifj16.us-west-2.redshift.amazonaws.com
+DB_NAME=dwh
+DB_USER=dwhuser
+DB_PASSWORD=Passw0rd
 DB_PORT=5439
 
 [IAM_ROLE]
+ARN_NAME='dwhRole';
 ARN='arn:aws:iam::601437042221:role/dwhRole'
 
 [DWH]
