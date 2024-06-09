@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ListObjectsInBucket",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::cd0030bucketuswest2",
+                "arn:aws:s3:::aws-glue-assets-342104140457-us-west-2"
+            ]
+        },
+        {
+            "Sid": "AllObjectActions",
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Resource": [
+                "arn:aws:s3:::cd0030bucketuswest2/*",
+                "arn:aws:s3:::aws-glue-assets-342104140457-us-west-2/*"
+            ]
+        }
+    ]
+}
