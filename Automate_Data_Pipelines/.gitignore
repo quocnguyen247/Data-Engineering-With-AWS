@@ -1,1 +1,4 @@
 *.docx
+issues/*
+*.cfg
+set_connections_and_variables.sh
